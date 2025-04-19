@@ -101,10 +101,10 @@ def save_data(data):
             print(f"File system error: {e}")
             return False
 
-# Initialize the database when app starts
-@app.before_first_request
 def before_first_request():
     init_db()
+
+before_first_request()
 
 # API endpoint to receive sensor data
 @app.route('/api/sensor-data', methods=['POST'])
