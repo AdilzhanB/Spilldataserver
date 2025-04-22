@@ -44,7 +44,7 @@ def init_db():
                     temperature FLOAT,
                     humidity FLOAT,
                     flow_rate FLOAT,
-                    flow_direction TEXT,
+                    flow_direction VARCHAR(50) NOT NULL,
                     latitude FLOAT,
                     longitude FLOAT,
                     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
