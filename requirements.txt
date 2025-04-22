@@ -1,5 +1,0 @@
-flask>=2.3.3
-gunicorn
-psycopg2-binary
-flask-cors
-Werkzeug==2.3.8
