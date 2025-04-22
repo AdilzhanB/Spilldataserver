@@ -12,7 +12,7 @@ CORS(app)  # Enable CORS for all routes
 # Database setup (for Heroku PostgreSQL)
 def get_db_connection():
     # Get DATABASE_URL from Heroku environment or use a default for local testing
-    database_url = os.environ.get('postgresql://spillserver_user:am5OUcmjUvPuX77AXWpdbUhLD4ShNm8v@dpg-d03nfare5dus73ag0ro0-a/spillserver', '')
+    database_url = os.environ.get('DATABASE_URL', '')
     
     if database_url:
         # Parse the database URL
